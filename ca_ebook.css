@@ -1,0 +1,21 @@
+.view-display-id-ca_ebook_additional_images_1 td {
+  padding: 0;
+}
+.view-display-id-ca_ebook_additional_images_1 {
+  margin: -1em 0;
+}
+.view-display-id-ca_ebook_list_template_1 .views-field-field-ca-ebook-image {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+.view-display-id-ca_ebook_list_template_1 .views-field-nothing, .view-display-id-ebook_block_1 .views-field-nothing {
+  clear: both;
+}
+.view-display-id-ebook_block_1 .views-field-field-ca-ebook-image {
+  float: left;
+  padding: 0 10px 5px 0;
+}
+#edit-field-ca-ebook-embed-code-und-0-format {
+  display: none;
+}

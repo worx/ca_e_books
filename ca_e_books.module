@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Code for the CA E-Books feature.
+ */
+
+include_once 'ca_e_books.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function ca_e_books_form_alter(&$form, &$form_state, $form_id) {
+  switch($form_id) {
+    case 'context_admin_node_form_wrapper':
+      // On the context admin e-book node add page alter the emebed field to be
+      // the iframe input format. Selection box is then hidden via CSS.
+      if ($form['type']['#value'] == "ca_ebook") {
+        $form['field_ca_ebook_embed_code']['und'][0]['#format'] = "iframe";
+      }
+      break;
+  }
+  return $form;
+}
