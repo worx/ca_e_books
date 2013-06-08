@@ -314,7 +314,7 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Broken/missing handler */
+  /* Relationship: Nodequeue: Queue */
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
   $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
   $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
@@ -382,6 +382,46 @@ function ca_e_books_views_default_views() {
   $handler = $view->new_display('block', 'CA E-Book Block Template 1', 'ebook_block_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['block_description'] = 'CA E-Book Block Template 1';
+
+  /* Display: CA E-Book Block Template 2 */
+  $handler = $view->new_display('block', 'CA E-Book Block Template 2', 'ebook_block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Featured';
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'e-book';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_ca_ebook_image']['id'] = 'field_ca_ebook_image';
+  $handler->display->display_options['fields']['field_ca_ebook_image']['table'] = 'field_data_field_ca_ebook_image';
+  $handler->display->display_options['fields']['field_ca_ebook_image']['field'] = 'field_ca_ebook_image';
+  $handler->display->display_options['fields']['field_ca_ebook_image']['label'] = '';
+  $handler->display->display_options['fields']['field_ca_ebook_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_ebook_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ebook_image']['settings'] = array(
+    'image_style' => 'front_ebook',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_ca_ebook_image']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_ca_ebook_image']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ca_ebook_image']['separator'] = '';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['block_description'] = 'CA E-Book Block Template 2';
   $export['ca_e_book_block'] = $view;
 
   $view = new view();
