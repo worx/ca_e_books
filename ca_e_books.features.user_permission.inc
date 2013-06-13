@@ -14,9 +14,9 @@ function ca_e_books_user_default_permissions() {
   $permissions['create ca_ebook content'] = array(
     'name' => 'create ca_ebook content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'ebook admin',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'ebook admin' => 'ebook admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function ca_e_books_user_default_permissions() {
   $permissions['delete any ca_ebook content'] = array(
     'name' => 'delete any ca_ebook content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'ebook admin',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'ebook admin' => 'ebook admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function ca_e_books_user_default_permissions() {
   $permissions['delete own ca_ebook content'] = array(
     'name' => 'delete own ca_ebook content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'ebook admin',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'ebook admin' => 'ebook admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function ca_e_books_user_default_permissions() {
   $permissions['edit any ca_ebook content'] = array(
     'name' => 'edit any ca_ebook content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'ebook admin',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'ebook admin' => 'ebook admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function ca_e_books_user_default_permissions() {
   $permissions['edit own ca_ebook content'] = array(
     'name' => 'edit own ca_ebook content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'ebook admin',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'ebook admin' => 'ebook admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -69,9 +69,9 @@ function ca_e_books_user_default_permissions() {
   $permissions['use text format iframe'] = array(
     'name' => 'use text format iframe',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'ebook admin',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'ebook admin' => 'ebook admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'filter',
   );

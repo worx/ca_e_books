@@ -311,10 +311,9 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Nodequeue: Queue */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
   $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
   $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
@@ -630,7 +629,6 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '1';
   $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '5';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;

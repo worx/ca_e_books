@@ -26,7 +26,7 @@ function ca_e_books_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function ca_e_books_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -44,4 +44,21 @@ function ca_e_books_node_info() {
     ),
   );
   return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function ca_e_books_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['ca_ebook'] = array(
+    'enabled' => 1,
+    'range' => 100,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
 }
