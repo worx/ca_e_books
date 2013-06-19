@@ -75,13 +75,6 @@ function ca_e_books_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_ca_ebook_pattern';
-  $strongarm->value = 'ebooks/[node:title]';
-  $export['pathauto_node_ca_ebook_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'weight_default_ca_ebook';
   $strongarm->value = '0';
   $export['weight_default_ca_ebook'] = $strongarm;
