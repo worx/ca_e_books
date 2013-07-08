@@ -377,13 +377,13 @@ function ca_e_books_views_default_views() {
     'ca_ebook' => 'ca_ebook',
   );
 
-  /* Display: CA E-Book Block Template 1 */
-  $handler = $view->new_display('block', 'CA E-Book Block Template 1', 'ebook_block_1');
+  /* Display: CA E-Book: E-Book Block Template 1 */
+  $handler = $view->new_display('block', 'CA E-Book: E-Book Block Template 1', 'ebook_block_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['block_description'] = 'CA E-Book Block Template 1';
+  $handler->display->display_options['block_description'] = 'CA E-Book: E-Book Block Template 1';
 
-  /* Display: CA E-Book Block Template 2 */
-  $handler = $view->new_display('block', 'CA E-Book Block Template 2', 'ebook_block_2');
+  /* Display: CA E-Book: E-Book Block Template Two */
+  $handler = $view->new_display('block', 'CA E-Book: E-Book Block Template Two', 'ebook_block_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Featured';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
@@ -420,7 +420,7 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['block_description'] = 'CA E-Book Block Template 2';
+  $handler->display->display_options['block_description'] = 'CA E-Book: E-Book Block Template Two';
   $export['ca_e_book_block'] = $view;
 
   $view = new view();
