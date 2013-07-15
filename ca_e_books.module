@@ -16,7 +16,7 @@ function ca_e_books_form_alter(&$form, &$form_state, $form_id) {
       // On the context admin e-book node add page alter the emebed field to be
       // the iframe input format. Selection box is then hidden via CSS.
       if ($form['type']['#value'] == "ca_ebook") {
-        $form['field_ca_ebook_embed_code']['und'][0]['#format'] = "iframe";
+        $form['field_ca_ebook_embed_code']['und'][0]['#format'] = "Full HTML";
       }
       break;
   }
