@@ -22,3 +22,58 @@ function ca_e_books_form_alter(&$form, &$form_state, $form_id) {
   }
   return $form;
 }
+
+/**
+ * Implements hook_menu().
+ */
+function ca_e_books_menu() {
+  $items['admin/config/worx_features/blog'] = array(
+    'title' => 'E-Books Configuration',
+    'description' => 'Override settings for ca_e_books',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_e_books_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_e_books.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_e_books'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/worx_features/blog/general'] = array(
+    'title' => 'General Settings',
+    'description' => 'Override settings for ca_e_books',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_e_books_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_e_books.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_e_books'),
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+function ca_e_books_menu_alter(&$items) {
+  $items['ebooks']['title'] = variable_get('ca_e_books_menu_title', 'E-Books');
+}
+
+/**
+ * Implements hook_panels_pre_render().
+ */
+function ca_e_books_panels_pre_render($panel, $renderer) {
+  foreach ($panel->content as $key => $value) {
+    if ($value->subtype == 'ca_e_book_list-ca_ebook_list_template_1') {
+      $panel->title = variable_get('ca_e_books_panel_title', 'E-Books');
+    }
+  }
+}
+
+/**
+ * Implementation of hook_ctools_plugin_directory()
+ */
+function ca_e_books_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools') {
+    return 'plugins/' . $plugin_type;
+  }
+}
