@@ -50,7 +50,7 @@ function ca_e_books_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -90,7 +90,7 @@ function ca_e_books_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -144,9 +144,52 @@ function ca_e_books_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ca_ebook-field_ca_ebook_pdf'
+  $field_instances['node-ca_ebook-field_ca_ebook_pdf'] = array(
+    'bundle' => 'ca_ebook',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ca_ebook_pdf',
+    'label' => 'E-book PDF',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'pdf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 4,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('E-book PDF');
   t('Embed Code');
   t('Image');
 

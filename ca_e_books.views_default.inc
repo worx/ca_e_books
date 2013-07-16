@@ -455,7 +455,6 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ebook_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_ebook_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_ca_ebook_image']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_ca_ebook_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_ca_ebook_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ebook_image']['settings'] = array(
     'image_style' => 'default',
