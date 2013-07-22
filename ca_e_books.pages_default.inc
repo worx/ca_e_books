@@ -69,23 +69,23 @@ function ca_e_books_default_page_manager_handlers() {
         'type' => 'row',
         'contains' => 'region',
         'children' => array(
-          0 => 'left_bar',
-          1 => 'center',
+          0 => 'center',
+          1 => 'right_bar',
         ),
         'parent' => 'main',
       ),
       'center' => array(
         'type' => 'region',
         'title' => 'Center',
-        'width' => '77.05417575419726',
+        'width' => '100',
         'width_type' => '%',
         'parent' => 'main-row',
       ),
-      'left_bar' => array(
+      'right_bar' => array(
         'type' => 'region',
-        'title' => 'Left Bar',
-        'width' => '22.94582424580275',
-        'width_type' => '%',
+        'title' => 'Right Bar',
+        'width' => '305',
+        'width_type' => 'px',
         'parent' => 'main-row',
         'class' => '',
       ),
@@ -96,6 +96,7 @@ function ca_e_books_default_page_manager_handlers() {
       'default' => NULL,
       'center' => NULL,
       'left_bar' => NULL,
+      'right_bar' => NULL,
     ),
   );
   $display->cache = array();
@@ -104,6 +105,42 @@ function ca_e_books_default_page_manager_handlers() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
+    $pane->panel = 'center';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_e_book_node-ca_ebook_main_image_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-1'] = $pane;
+    $display->panels['center'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
+    $pane->panel = 'center';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_e_book_node-ca_ebook_additional_images_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['center'][1] = 'new-2';
+    $pane = new stdClass();
+    $pane->pid = 'new-3';
     $pane->panel = 'center';
     $pane->type = 'node_body';
     $pane->subtype = 'node_body';
@@ -120,49 +157,13 @@ function ca_e_books_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['center'][0] = 'new-1';
-    $pane = new stdClass();
-    $pane->pid = 'new-2';
-    $pane->panel = 'left_bar';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_e_book_node-ca_ebook_main_image_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['left_bar'][0] = 'new-2';
-    $pane = new stdClass();
-    $pane->pid = 'new-3';
-    $pane->panel = 'left_bar';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_e_book_node-ca_ebook_additional_images_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
-    $display->panels['left_bar'][1] = 'new-3';
+    $display->panels['center'][2] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
-    $pane->panel = 'left_bar';
+    $pane->panel = 'right_bar';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_ca_ebook_embed_code';
     $pane->shown = TRUE;
@@ -184,10 +185,10 @@ function ca_e_books_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-4'] = $pane;
-    $display->panels['left_bar'][2] = 'new-4';
+    $display->panels['right_bar'][0] = 'new-4';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

@@ -621,7 +621,7 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ebook_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ebook_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_ebook_image']['settings'] = array(
-    'colorbox_node_style' => 'default',
+    'colorbox_node_style' => 'ebook_node',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
