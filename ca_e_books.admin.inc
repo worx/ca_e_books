@@ -9,7 +9,7 @@
  */
 
 /**
- * Defines the menu for overriding blog feature settings.
+ * Defines the menu for overriding e-book feature settings.
  * 
  * @return
  *   Fully formed Form API array.
