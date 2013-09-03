@@ -22,6 +22,7 @@ function ca_e_books_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -266,6 +267,7 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Ebook Administration';
   $handler->display->display_options['pane_category']['name'] = 'E-Book';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Ebook Sort */
   $handler = $view->new_display('panel_pane', 'CA Ebook Sort', 'ca_ebook_sort');
@@ -287,6 +289,7 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Ebook Sort';
   $handler->display->display_options['pane_category']['name'] = 'E-Book';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['ca_e_book_admin'] = $view;
 
   $view = new view();
@@ -530,6 +533,19 @@ function ca_e_books_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Ebook List Template 1';
   $handler->display->display_options['pane_category']['name'] = 'E-Book';
   $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'ca_ebook_feed');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['path'] = 'ebooks/feed';
+  $handler->display->display_options['displays'] = array(
+    'ca_ebook_list_template_1' => 'ca_ebook_list_template_1',
+    'default' => 0,
+  );
   $export['ca_e_book_list'] = $view;
 
   $view = new view();
