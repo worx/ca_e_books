@@ -27,12 +27,20 @@
 
 .pane-ca-e-book-node-ca-ebook-main-image-1 {
   float: left;
-  padding-right: 5px;
+  padding: 0 15px 5px 0;
 }
 
 .pane-ca-e-book-node-ca-ebook-additional-images-1 {
   float: left;
   clear: left;
-  padding-right: 5px;
+  padding: 0 15px 5px 0;
   min-width: 300px;
+}
+
+.pane-ca-e-book-node-ca-ebook-additional-images-1 table {
+  margin: 0;
+}
+
+.pane-ca-e-book-node-ca-ebook-additional-images-1 td {
+  text-align: center;
 }
