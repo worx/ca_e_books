@@ -16,7 +16,7 @@ function ca_e_books_filter_default_formats() {
     'name' => 'iframe',
     'cache' => 1,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -10,
     'filters' => array(
       'filter_html' => array(
         'weight' => -10,
