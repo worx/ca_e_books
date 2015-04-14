@@ -29,4 +29,11 @@ function ca_e_book_install() {
 
   // Set the Pathauto for the node.
   variable_set('pathauto_node_ca_before_and_after_pattern', 'ebooks/[node:title]');
+
+  // Added the permission assign node weights for E-Book Admin.
+  user_role_change_permissions(63348750, 
+    array(
+      'assign node weights' => TRUE,
+    )
+  );
 }
