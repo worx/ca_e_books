@@ -37,3 +37,19 @@ function ca_e_book_install() {
     )
   );
 }
+
+/**
+ * Setting worx_aurora_base_enable default so that panels can work corretly when aura base feature is not enabled.
+ * Added the permission assign node weights for E-Book Admin.
+ */
+function ca_e_book_update_7000() {
+  // Get the worx_aurora_base_enable variable to default set if not already set.
+  variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
+
+  // Added the permission assign node weights for E-Book Admin.
+  user_role_change_permissions(63348750, 
+    array(
+      'assign node weight' => TRUE,
+    )
+  );
+}
