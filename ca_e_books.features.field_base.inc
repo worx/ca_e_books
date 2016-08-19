@@ -10,7 +10,7 @@
 function ca_e_books_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ca_ebook_embed_code'
+  // Exported field_base: 'field_ca_ebook_embed_code'.
   $field_bases['field_ca_ebook_embed_code'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -29,7 +29,7 @@ function ca_e_books_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_ca_ebook_image'
+  // Exported field_base: 'field_ca_ebook_image'.
   $field_bases['field_ca_ebook_image'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -51,7 +51,7 @@ function ca_e_books_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_ca_ebook_pdf'
+  // Exported field_base: 'field_ca_ebook_pdf'.
   $field_bases['field_ca_ebook_pdf'] = array(
     'active' => 1,
     'cardinality' => 1,

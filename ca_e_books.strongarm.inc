@@ -76,7 +76,7 @@ function ca_e_books_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'weight_default_ca_ebook';
-  $strongarm->value = '0';
+  $strongarm->value = '-100';
   $export['weight_default_ca_ebook'] = $strongarm;
 
   $strongarm = new stdClass();

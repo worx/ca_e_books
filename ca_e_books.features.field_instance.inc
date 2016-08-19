@@ -10,7 +10,7 @@
 function ca_e_books_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ca_ebook-body'
+  // Exported field_instance: 'node-ca_ebook-body'.
   $field_instances['node-ca_ebook-body'] = array(
     'bundle' => 'ca_ebook',
     'default_value' => NULL,
@@ -54,7 +54,7 @@ function ca_e_books_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_ebook-field_ca_ebook_embed_code'
+  // Exported field_instance: 'node-ca_ebook-field_ca_ebook_embed_code'.
   $field_instances['node-ca_ebook-field_ca_ebook_embed_code'] = array(
     'bundle' => 'ca_ebook',
     'default_value' => NULL,
@@ -94,7 +94,7 @@ function ca_e_books_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_ebook-field_ca_ebook_image'
+  // Exported field_instance: 'node-ca_ebook-field_ca_ebook_image'.
   $field_instances['node-ca_ebook-field_ca_ebook_image'] = array(
     'bundle' => 'ca_ebook',
     'deleted' => 0,
@@ -136,6 +136,18 @@ function ca_e_books_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -144,7 +156,7 @@ function ca_e_books_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_ebook-field_ca_ebook_pdf'
+  // Exported field_instance: 'node-ca_ebook-field_ca_ebook_pdf'.
   $field_instances['node-ca_ebook-field_ca_ebook_pdf'] = array(
     'bundle' => 'ca_ebook',
     'deleted' => 0,
