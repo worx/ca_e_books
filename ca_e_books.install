@@ -34,36 +34,20 @@ function ca_e_book_install() {
   user_role_change_permissions(63348750, 
     array(
       'assign node weight' => TRUE,
-      'create ca_ebook content' => TRUE,
-      'delete any ca_ebook content' => TRUE,
-      'delete own ca_ebook content' => TRUE,
-      'edit any ca_ebook content' => TRUE,
-      'edit own ca_ebook content' => TRUE,
-      'use text format iframe' => TRUE,
     )
   );
 
   // Set the permissions for Administrator
   user_role_change_permissions(3, 
     array(
-      'create ca_ebook content' => TRUE,
-      'delete any ca_ebook content' => TRUE,
-      'delete own ca_ebook content' => TRUE,
-      'edit any ca_ebook content' => TRUE,
-      'edit own ca_ebook content' => TRUE,
-      'use text format iframe' => TRUE,
+      'assign node weight' => TRUE,
     )
   );
 
   // Set the permissions for Webmaster
   user_role_change_permissions(4, 
     array(
-      'create ca_ebook content' => TRUE,
-      'delete any ca_ebook content' => TRUE,
-      'delete own ca_ebook content' => TRUE,
-      'edit any ca_ebook content' => TRUE,
-      'edit own ca_ebook content' => TRUE,
-      'use text format iframe' => TRUE,
+      'assign node weight' => TRUE,
     )
   );
 }
@@ -85,43 +69,20 @@ function ca_e_book_update_7000() {
 }
 
 /**
- * Set the permissions for E-Book Admin, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
- * given these permissions without overridding the feature.
+ * Added the permission assign node weights Administrator and Webmaster.
  */
 function ca_e_book_update_7001() {
-  // Added the permission assign node weights for E-Book Admin.
-  user_role_change_permissions(63348750, 
-    array(
-      'create ca_ebook content' => TRUE,
-      'delete any ca_ebook content' => TRUE,
-      'delete own ca_ebook content' => TRUE,
-      'edit any ca_ebook content' => TRUE,
-      'edit own ca_ebook content' => TRUE,
-      'use text format iframe' => TRUE,
-    )
-  );
-
   // Set the permissions for Administrator
   user_role_change_permissions(3, 
     array(
-      'create ca_ebook content' => TRUE,
-      'delete any ca_ebook content' => TRUE,
-      'delete own ca_ebook content' => TRUE,
-      'edit any ca_ebook content' => TRUE,
-      'edit own ca_ebook content' => TRUE,
-      'use text format iframe' => TRUE,
+      'assign node weight' => TRUE,
     )
   );
 
   // Set the permissions for Webmaster
   user_role_change_permissions(4, 
     array(
-      'create ca_ebook content' => TRUE,
-      'delete any ca_ebook content' => TRUE,
-      'delete own ca_ebook content' => TRUE,
-      'edit any ca_ebook content' => TRUE,
-      'edit own ca_ebook content' => TRUE,
-      'use text format iframe' => TRUE,
+      'assign node weight' => TRUE,
     )
   );
 }
