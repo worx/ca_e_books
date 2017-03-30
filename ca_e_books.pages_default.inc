@@ -102,8 +102,8 @@ function ca_e_books_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = 'cc7a71c6-cfd5-4d73-8f59-67984a8bd3b5';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'ca_e_books_node_view_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -294,8 +294,8 @@ function ca_e_books_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = '4ad91744-6783-412c-b5d6-86a77714af27';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'ca_e_books_node_view_panel_context_2';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -540,8 +540,8 @@ function ca_e_books_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = 'cc7a71c6-cfd5-4d73-8f59-67984a8bd3b5';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'node_view__panel_context_636f0f2c-5165-475c-91e8-b73ffa3439e3';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -787,8 +787,8 @@ function ca_e_books_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = '4ad91744-6783-412c-b5d6-86a77714af27';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'node_view__panel_context_83313f61-f5c5-4304-9d02-c50a616c239e';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -1031,8 +1031,8 @@ function ca_e_books_default_page_manager_pages() {
   $display->cache = array();
   $display->title = 'Ebooks';
   $display->uuid = 'f911c4f3-6621-45c6-afde-d2dd6ebcd7ba';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_ebook_admin_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -1117,8 +1117,8 @@ function ca_e_books_default_page_manager_pages() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '5e2b9f45-aa46-4977-b161-3fff9e89135c';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_ebook_list_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -1175,8 +1175,8 @@ function ca_e_books_default_page_manager_pages() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '5e2b9f45-aa46-4977-b161-3fff9e89135c';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_ebook_list__panel_context_83c005a6-0a5d-4467-b3fa-72e3a7a2d7f1';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -1277,8 +1277,8 @@ function ca_e_books_default_page_manager_pages() {
   $display->cache = array();
   $display->title = 'Ebooks';
   $display->uuid = '000d3464-2c9b-47df-a66c-528e378eac46';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_ebook_sort_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
